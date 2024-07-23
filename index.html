@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Network</title>
+    <link rel="stylesheet" href="src/css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Our Social Network</h1>
+        <nav>
+            <ul>
+                <li><a href="#profile">Profile</a></li>
+                <li><a href="#feed">Feed</a></li>
+                <li><a href="#friends">Friends</a></li>
+                <li><a href="#settings">Settings</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="profile">
+            <h2>Your Profile</h2>
+            <div class="profile-info">
+                <img src="src/images/profile.jpg" alt="Profile Picture">
+                <h3>Username</h3>
+                <p>Bio: A short bio about the user.</p>
+            </div>
+            <h3>Your Posts</h3>
+            <ul id="user-posts">
+                <!-- User posts will be listed here -->
+            </ul>
+        </section>
+        <section id="feed">
+            <h2>Feed</h2>
+            <form id="new-post-form">
+                <textarea id="new-post-content" placeholder="What's on your mind?"></textarea>
+                <button type="submit">Post</button>
+            </form>
+            <ul id="feed-posts">
+                <!-- Feed posts will be listed here -->
+            </ul>
+        </section>
+        <section id="friends">
+            <h2>Friends</h2>
+            <form id="add-friend-form">
+                <input type="text" id="friend-username" placeholder="Username">
+                <button type="submit">Add Friend</button>
+            </form>
+            <ul id="friends-list">
+                <!-- Friends will be listed here -->
+            </ul>
+        </section>
+        <section id="settings">
+            <h2>Settings</h2>
+            <form id="settings-form">
+                <label for="change-password">Change Password:</label>
+                <input type="password" id="change-password" placeholder="New Password">
+                <button type="submit">Update</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Social Network</p>
+    </footer>
+    <script src="src/js/main.js"></script>
+</body>
+</html>
